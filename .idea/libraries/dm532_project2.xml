@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="dm532-project2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/heap.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bufmgr.jar!/" />
+      <root url="jar://$PROJECT_DIR$/index.jar!/" />
+      <root url="jar://$PROJECT_DIR$/query.jar!/" />
+      <root url="jar://$PROJECT_DIR$/diskmgr.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
