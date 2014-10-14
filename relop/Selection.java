@@ -23,7 +23,9 @@ public class Selection extends Iterator {
             System.out.println("DEBUG: Called " + this.toString() + " method 'Selection()'");
         }
 
+        //Our Iterator to filter on using the predicates.
         this.iterator = iter;
+        //The SELECT statements.
         this.predicates = preds.clone();
 
         //Schema must be set in all subclass constructors:
@@ -33,6 +35,8 @@ public class Selection extends Iterator {
     /**
      * Gives a one-line explanation of the iterator, repeats the call on any
      * child iterators, and increases the indent depth along the way.
+     *
+     * Note: What this do it simply to print out the statements, nothing else.
      */
     public void explain(int depth) {
         if (debug){

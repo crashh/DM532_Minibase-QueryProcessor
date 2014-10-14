@@ -9,8 +9,6 @@ public class Projection extends Iterator {
     private Iterator iterator;
     private Integer[] fields;
 
-    private boolean hasNext = false;
-
     private Tuple nextTuple = null;
 
     //Used for debugging:
@@ -25,9 +23,10 @@ public class Projection extends Iterator {
             System.out.println("DEBUG: Called " + this.toString() + " method 'Projection()'");
         }
 
+        //Our iterator to remove columns from.
         this.iterator = iter;
+        //I assume this array of Integers, refers to the schema and the tuples locations therein?
         this.fields = fields.clone();
-
         //Schema must be set in all subclass constructors:
         this.schema = iter.schema;
     }
@@ -35,6 +34,8 @@ public class Projection extends Iterator {
     /**
      * Gives a one-line explanation of the iterator, repeats the call on any
      * child iterators, and increases the indent depth along the way.
+     *
+     * Note: What this do it simply to print out the statements, nothing else.
      */
     public void explain(int depth) {
         if (debug){
@@ -58,7 +59,7 @@ public class Projection extends Iterator {
         if (debug){
             System.out.println("DEBUG: Called " + this.toString() + " method 'restart()'");
         }
-        iterator.restart(); //This probably wont work..
+        iterator.restart(); //Why does this work?
     }
 
     /**
@@ -68,7 +69,7 @@ public class Projection extends Iterator {
         if (debug){
             System.out.println("DEBUG: Called " + this.toString() + " method 'isOpen()'");
         }
-        return iterator.isOpen(); //This probably wont work..
+        return iterator.isOpen(); //Why does this work?
     }
 
     /**
@@ -79,7 +80,6 @@ public class Projection extends Iterator {
             System.out.println("DEBUG: Called " + this.toString() + " method 'close()'");
         }
         nextTuple = null;
-        hasNext = false;
         iterator.close();
     }
 
@@ -90,7 +90,10 @@ public class Projection extends Iterator {
         if (debug){
             System.out.println("DEBUG: Called " + this.toString() + " method 'hasNext()'");
         }
-        throw new UnsupportedOperationException("Not implemented");
+        if (iterator.hasNext()){
+            return true;
+        }
+        return false;
     }
 
     /**
@@ -102,7 +105,15 @@ public class Projection extends Iterator {
         if (debug){
             System.out.println("DEBUG: Called " + this.toString() + " method 'getNext()'");
         }
-        throw new UnsupportedOperationException("Not implemented");
+        // validate the next tuple
+        if (nextTuple == null) {
+            throw new IllegalStateException("no more tuples");
+        }
+
+        // return (and forget) the tuple
+        Tuple tuple = nextTuple;
+        nextTuple = null;
+        return tuple;
     }
 
 } // public class Projection extends Iterator

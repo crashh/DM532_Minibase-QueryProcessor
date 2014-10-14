@@ -2,6 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="087cd901-c12c-4731-af9d-cb06544e606f" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\global\AttrOperator.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\global\AttrType.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\global\Convert.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\global\GlobalConst.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\global\Minibase.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\global\Msql.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\global\Page.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\global\PageId.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\global\RID.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\global\SearchKey.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\global\SortKey.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\AST_AndExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\AST_ColumnType.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\AST_CreateIndex.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\AST_CreateTable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\AST_Delete.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\AST_Describe.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\AST_DropIndex.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\AST_DropTable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\AST_ExprPred.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\AST_ExprValue.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\AST_IdentList.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\AST_Insert.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\AST_OrExpr.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\AST_OrderBy.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\AST_Select.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\AST_Start.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\AST_Update.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\JJTMiniSqlState.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\MiniSql$JJCalls.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\MiniSql$LookaheadSuccess.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\MiniSql.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\MiniSqlConstants.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\MiniSqlTokenManager.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\MiniSqlTreeConstants.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\Node.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\ParseException.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\SimpleCharStream.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\SimpleNode.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\Token.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\parser\TokenMgrError.class" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\relop\FileScan.class" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\relop\Iterator.class" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\relop\MergeJoin.class" afterPath="" />
@@ -15,7 +56,6 @@
       <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\tests\BROTest.class" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\tests\TestDriver$CountData.class" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\crashh\Dropbox\Programmering\JAVA\SDU Projects\dm532-project2\tests\TestDriver.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/relop/Iterator.java" afterPath="$PROJECT_DIR$/relop/Iterator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/relop/Projection.java" afterPath="$PROJECT_DIR$/relop/Projection.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/relop/Selection.java" afterPath="$PROJECT_DIR$/relop/Selection.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -61,11 +101,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Selection.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Selection.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/relop/Selection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13965517" vertical-offset="1364" max-vertical-offset="2261">
-              <caret line="85" column="30" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1749" max-vertical-offset="2329">
+              <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Projection.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/relop/Projection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.37205386" vertical-offset="204" max-vertical-offset="2125">
+              <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -130,8 +180,8 @@
         <option value="$PROJECT_DIR$/relop/SimpleJoin.java" />
         <option value="$PROJECT_DIR$/relop/FileScan.java" />
         <option value="$PROJECT_DIR$/relop/Iterator.java" />
-        <option value="$PROJECT_DIR$/relop/Projection.java" />
         <option value="$PROJECT_DIR$/relop/Selection.java" />
+        <option value="$PROJECT_DIR$/relop/Projection.java" />
       </list>
     </option>
   </component>
@@ -491,12 +541,12 @@
       <workItem from="1413120551355" duration="47000" />
       <workItem from="1413204697757" duration="1513000" />
       <workItem from="1413227001096" duration="9991000" />
-      <workItem from="1413294410122" duration="3095000" />
+      <workItem from="1413294410122" duration="4424000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18846000" />
+    <option name="totallyTimeSpent" value="20175000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -520,13 +570,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32756758" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32756758" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -542,7 +592,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1673774" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34270272" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34270272" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -959,14 +1009,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/relop/Projection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1324" max-vertical-offset="1938">
-          <caret line="98" column="54" selection-start-line="98" selection-start-column="54" selection-end-line="98" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/relop/SimpleJoin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2142" max-vertical-offset="2737">
@@ -977,8 +1019,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/relop/Selection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13965517" vertical-offset="1364" max-vertical-offset="2261">
-          <caret line="85" column="30" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1749" max-vertical-offset="2329">
+          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/relop/Projection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37205386" vertical-offset="204" max-vertical-offset="2125">
+          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
           <folding />
         </state>
       </provider>
