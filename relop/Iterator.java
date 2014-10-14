@@ -63,7 +63,7 @@ public abstract class Iterator {
    * @return number of tuples processed
    */
   public int execute() {
-	  this.explain(1);
+	this.explain(1);
     int cnt = 0;
     schema.print();
     while (hasNext()) {

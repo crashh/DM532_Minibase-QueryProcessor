@@ -10,8 +10,6 @@ public class Selection extends Iterator {
     private Iterator iterator;
     private Predicate[] predicates;
 
-    private boolean hasNext = false;
-
     private Tuple nextTuple = null;
 
     //Used for debugging:
@@ -44,7 +42,7 @@ public class Selection extends Iterator {
         System.out.print("\n SELECT * WHERE (");
         if (predicates.length > 0) {
             for (int i = 0; i < predicates.length - 1; i++) {
-                System.out.print(predicates[i].toString() + ") OR (");
+                System.out.print(predicates[i].toString() + " OR ");
             }
             System.out.print(predicates[predicates.length - 1] + ")");
         }
@@ -58,7 +56,7 @@ public class Selection extends Iterator {
         if (debug){
             System.out.println("DEBUG: Called " + this.toString() + " method 'restart()'");
         }
-        iterator.restart(); //This probably wont work..
+        iterator.restart(); //Why does this work?
     }
 
     /**
@@ -68,7 +66,7 @@ public class Selection extends Iterator {
         if (debug){
             System.out.println("DEBUG: Called " + this.toString() + " method 'isOpen()'");
         }
-        return iterator.isOpen(); //This probably wont work..
+        return iterator.isOpen(); //Why does this work?
     }
 
     /**
@@ -79,7 +77,6 @@ public class Selection extends Iterator {
             System.out.println("DEBUG: Called " + this.toString() + " method 'close()'");
         }
         nextTuple = null;
-        hasNext = false;
         iterator.close();
     }
 
@@ -90,12 +87,21 @@ public class Selection extends Iterator {
         if (debug){
             System.out.println("DEBUG: Called " + this.toString() + " method 'hasNext()'");
         }
+        while (iterator.hasNext()) {
 
-        if (!hasNext) {
-            findNext();
+            // try to pass the next tuple
+            nextTuple = iterator.getNext();
+            if (predicates.length == 0) { // Can we delete this?
+                return true;
+            }
+            for (Predicate predicate : predicates) {
+                // if it passes, return found
+                if (predicate.evaluate(nextTuple)) {
+                    return true;
+                }
+            }
         }
-
-        return hasNext;
+        return false;
     }
 
     /**
@@ -107,33 +113,15 @@ public class Selection extends Iterator {
         if (debug){
             System.out.println("DEBUG: Called " + this.toString() + " method 'getNext()'");
         }
-        if (!hasNext) {
-            findNext();
+        // validate the next tuple
+        if (nextTuple == null) {
+            throw new IllegalStateException("no more tuples");
         }
-        if (!hasNext) {
-            throw new IllegalStateException();
-        }
-        hasNext = false;
-        return nextTuple;
-    }
 
-    private void findNext() {
-        while (!hasNext && iterator.hasNext()) {
-            Tuple t = iterator.getNext();
-            if (qualify(t)) {
-                nextTuple = t;
-                hasNext = true;
-            }
-        }
-    }
-
-    private boolean qualify(Tuple t) {
-        for (Predicate p : predicates) {
-            if(true == p.evaluate(t)) {
-                return true;
-            }
-        }
-        return false;
+        // return (and forget) the tuple
+        Tuple tuple = nextTuple;
+        nextTuple = null;
+        return tuple;
     }
 
 } // public class Selection extends Iterator
