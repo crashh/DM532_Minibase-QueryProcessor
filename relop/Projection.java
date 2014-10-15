@@ -9,10 +9,8 @@ public class Projection extends Iterator {
     private Iterator iterator;
     private Integer[] fields;
 
-    private Tuple nextTuple = null;
-
     //Used for debugging:
-    private boolean debug = true;
+    private boolean debug = false;
 
 
     /**
@@ -28,14 +26,23 @@ public class Projection extends Iterator {
         //I assume this array of Integers, refers to the schema and the tuples locations therein?
         this.fields = fields.clone();
         //Schema must be set in all subclass constructors:
-        this.schema = iter.schema;
+        this.schema = new Schema(fields.length);
+        /*for (Integer n : fields) {
+            //Sets a field from another schema.
+            this.schema.initField(n, iterator.schema, n);
+        }*/
+
+        for (int i = 0; i < fields.length; i++) {
+            this.schema.initField(i, iterator.schema, fields[i].intValue());
+        }
     }
 
     /**
      * Gives a one-line explanation of the iterator, repeats the call on any
      * child iterators, and increases the indent depth along the way.
      *
-     * Note: What this do it simply to print out the statements, nothing else.
+     * Note: What this do is simply to print out the statements, nothing else.
+     * Think of typing EXPLAIN in your query is postgres.
      */
     public void explain(int depth) {
         if (debug){
@@ -79,7 +86,6 @@ public class Projection extends Iterator {
         if (debug){
             System.out.println("DEBUG: Called " + this.toString() + " method 'close()'");
         }
-        nextTuple = null;
         iterator.close();
     }
 
@@ -90,10 +96,7 @@ public class Projection extends Iterator {
         if (debug){
             System.out.println("DEBUG: Called " + this.toString() + " method 'hasNext()'");
         }
-        if (iterator.hasNext()){
-            return true;
-        }
-        return false;
+        return (iterator.hasNext());
     }
 
     /**
@@ -105,15 +108,18 @@ public class Projection extends Iterator {
         if (debug){
             System.out.println("DEBUG: Called " + this.toString() + " method 'getNext()'");
         }
-        // validate the next tuple
-        if (nextTuple == null) {
-            throw new IllegalStateException("no more tuples");
+
+        //Create a new tuple:
+        Tuple newTuple = new Tuple(schema);
+        //Get the tuple values:
+        Tuple tupleValues = iterator.getNext();
+        //Move relevant tuple values to the new tuple:
+        for (int i = 0; i < this.fields.length; i++) {
+            newTuple.setField(i, tupleValues.getField(this.fields[i].intValue()));
         }
 
-        // return (and forget) the tuple
-        Tuple tuple = nextTuple;
-        nextTuple = null;
-        return tuple;
+        //Return the new yuple with the relevant values:
+        return newTuple;
     }
 
 } // public class Projection extends Iterator

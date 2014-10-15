@@ -36,7 +36,8 @@ public class Selection extends Iterator {
      * Gives a one-line explanation of the iterator, repeats the call on any
      * child iterators, and increases the indent depth along the way.
      *
-     * Note: What this do it simply to print out the statements, nothing else.
+     * Note: What this do is simply to print out the statements, nothing else.
+     * Think of typing EXPLAIN in your query is postgres.
      */
     public void explain(int depth) {
         if (debug){
